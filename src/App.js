@@ -1,13 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
-import NavBarComponents from './components/NavBarComponents';
+//import logo from './logo.svg';
+import React from "react";
+import { Row, Col, Container } from "react-bootstrap";
+import "./App.css";
+import {CatagoriesList, Hasil, NavBarComponents} from "./components";
 
 function App() {
   return (
     <div className="App">
-      
-      <NavBarComponents/>
-      <h2>Halo</h2>
+      <NavBarComponents />
+      <div className="mt-3">
+        <Container>
+          <Row>
+            <CatagoriesList />
+            <Col>
+              <h4>
+                <strong>Daftar Produk</strong>
+              </h4>
+            </Col>
+            <Hasil />
+          </Row>
+        </Container>
+      </div>
     </div>
   );
 }
