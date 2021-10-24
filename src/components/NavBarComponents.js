@@ -10,7 +10,7 @@ import "./NavBar.css";
 function NavBarComponents() {
   return (
     <div className="navMenu">
-      <Navbar bg="dark" variant='dark' expand="lg">
+      <Navbar  variant='dark' expand="lg">
         <Container>
           <Navbar.Brand href="#home"><strong>Kasir</strong> WebApps</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
